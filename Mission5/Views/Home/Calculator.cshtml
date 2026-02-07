@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<div class="content-card">
+    <h2>Pickleball Tutoring Cost Calculator</h2>
+
+    <div class="form-grid">
+        <label for="hoursInput">Hours needed:</label>
+        <input id="hoursInput" type="number" step="0.5" min="0" placeholder="e.g. 2" />
+
+        <label for="rateInput">Rate ($ per hour):</label>
+        <input id="rateInput" type="text" value="25" readonly />
+
+        <button id="calcBtn" type="button">Calculate Total</button>
+
+        <label for="totalOutput">Total ($):</label>
+        <input id="totalOutput" type="text" readonly />
+
+        <p id="errorMsg" class="error-msg"></p>
+    </div>
+
+    <p class="note">
+        <a asp-controller="Home" asp-action="Index">Back to Home</a>
+    </p>
+</div>
+
+@section Scripts {
+    <script src="~/js/tutorCalc.js"></script>
+}

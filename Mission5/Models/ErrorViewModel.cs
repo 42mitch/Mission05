@@ -1,4 +1,4 @@
-namespace Mission5.Models;
+namespace Mission05.Models;
 
 public class ErrorViewModel
 {

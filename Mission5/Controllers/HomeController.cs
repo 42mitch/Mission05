@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Mission5.Models;
+using Mission05.Models;
 
-namespace Mission5.Controllers;
+namespace Mission05.Controllers;
 
 public class HomeController : Controller
 {
@@ -11,7 +11,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Calculator()
     {
         return View();
     }
